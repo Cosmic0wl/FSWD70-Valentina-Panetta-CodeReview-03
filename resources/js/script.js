@@ -1,17 +1,23 @@
     var btn = document.getElementById("btn");
     var result = document.getElementById("result");
 
-
+    //takes data from input values
     function fetchData() {
         var name = document.getElementById("name").value;
         var age = Number(document.getElementById("age").value);
         var horsePower = Number(document.getElementById("horsepower").value);
         var countries = document.getElementById("countries");
         var selectedCountry = countries.options[countries.selectedIndex].value;
-        if (isNaN(age)) {
+        if (name == "") {
+        	document.getElementById("result").innerHTML = "Please enter your name!";
+        } else if (isNaN(age)) {
             document.getElementById("result").innerHTML = "Age must be a number!";
         } else if (isNaN(horsePower)) {
             document.getElementById("result").innerHTML = "Horsepower must be a number!";
+        } else if (age <= 0) {
+            document.getElementById("result").innerHTML = "Age must be greater than zero!";
+        } else if (horsePower <= 0) {
+            document.getElementById("result").innerHTML = "Horsepower must be greater than zero!";
         } else {
             var insurance = calculateInsurance(age, selectedCountry, horsePower);
             document.getElementById("result").innerHTML = name + ", your insurance costs " + insurance.toFixed(2) + "€";
@@ -19,7 +25,7 @@
 
     }
 
-
+    // calculates insurance for three different countries
     function calculateInsurance(age, selectedCountry, horsePower) {
         var insurance = 0;
         if (selectedCountry == "austria") {
