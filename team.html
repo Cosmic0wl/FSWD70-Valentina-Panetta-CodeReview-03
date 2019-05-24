@@ -22,6 +22,9 @@
         <div id="container">
             <div id="team">
                 <h1>Meet The Team</h1>
+                <div class="team-member"></div>
+                <div class="team-member"></div>
+                <div class="team-member"></div>
             </div>
         </div>
          <!-- FOOTER -->
@@ -38,6 +41,12 @@
             <p>Valentina Panetta - CodeFactory 2019</p>
         </div>
 	</div>
-	
+	<script type="text/javascript" src="resources/js/data.json"></script>
+    <script>
+        
+     for (i = 0; i < teamMembers.length; i++) {
+        document.getElementsByClassName("team-member")[i].innerHTML = teamMembers[i].name + " " + teamMembers[i].email;
+    }
+    </script>
 </body>
 </html>
