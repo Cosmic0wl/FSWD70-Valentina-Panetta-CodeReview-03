@@ -1,13 +1,13 @@
 var teamMembers = [{
-"name":"Fran", 
+"name":"Francesca", 
 "email":"fran@index.com",
-"image":"images/person1.png"
+"image":"../img/team_1.jpg"
 },{
-"name":"Bill",
-"email":"bill@index.com",
-"image":"images/person2.png"
+"name":"Julia",
+"email":"julia@index.com",
+"image":"../img/team_2.jpg"
 },{
-"name":"Fritz", 
-"email":"fritz@index.com",
-"image":"images/person3.png"
+"name":"Heather", 
+"email":"heather@index.com",
+"image":"../img/team_3.jpg"
 }];
