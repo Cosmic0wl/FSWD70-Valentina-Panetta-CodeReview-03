@@ -1,0 +1,91 @@
+/* color palette */
+
+$logo-color: #FFF2F3;
+$subtitle-color: #CECECE;
+$bottom-color: #131313;
+$white: #FFFFFF;
+$h3-color: #6F86B4;
+$verified-color: #8ED2D4;
+$button-color: #349134;
+
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+/* WRAPPER AND CONTAINER */
+
+#wrapper {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#banner {
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: $logo-color;
+    align-items: center;
+}
+
+#banner img {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+/* NAVIGATION HEADER AND FOOOTER*/
+
+nav {
+    background-color: $bottom-color;
+    padding: 0.2rem;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    padding-right: 0.2rem;
+}
+
+/* MAIN CONTENT */
+
+#background {
+	background-image: url("resources/img/traffic.jpg");
+	min-height: 380px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: $bottom-color;
+    margin-top: 5rem;
+}
+
+#logo {
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+#footer p {
+    text-align: center;
+    color: $white;
+    font-size: 0.75rem;
+}

@@ -1,0 +1,65 @@
+/* color palette */
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif; }
+
+.flex {
+  display: flex; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+/* WRAPPER AND CONTAINER */
+#wrapper {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+#container {
+  width: 90%;
+  margin: 0 auto; }
+
+#banner {
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #FFF2F3;
+  align-items: center; }
+
+#banner img {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem; }
+
+/* NAVIGATION HEADER AND FOOOTER*/
+nav {
+  background-color: #131313;
+  padding: 0.2rem; }
+
+nav li {
+  display: inline; }
+
+nav li a {
+  padding-right: 0.2rem; }
+
+/* MAIN CONTENT */
+#background {
+  background-image: url("resources/img/traffic.jpg");
+  min-height: 380px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* FOOTER */
+#footer {
+  background-color: #131313;
+  margin-top: 5rem; }
+
+#logo {
+  justify-content: flex-end;
+  padding-right: 2rem; }
+
+#footer p {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 0.75rem; }
+
+/*# sourceMappingURL=style.css.map */
