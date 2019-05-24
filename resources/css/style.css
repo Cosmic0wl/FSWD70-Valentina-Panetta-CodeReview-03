@@ -75,7 +75,7 @@ form {
 #button-container {
   justify-content: center; }
 
-.btn {
+#btn {
   background-color: #349134;
   color: #FFFFFF;
   width: 30%;
@@ -196,7 +196,7 @@ h5 {
   label {
     font-size: 0.75rem; }
 
-  .btn {
+  #btn {
     font-size: 1rem; }
 
   #subtitle h3,
