@@ -1,7 +1,7 @@
     var btn = document.getElementById("btn");
     var result = document.getElementById("result");
 
-    //takes data from input values
+    //takes data from input values and sets conditions
     function fetchData() {
         var name = document.getElementById("name").value;
         var age = Number(document.getElementById("age").value);
