@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /* color palette */
 body {
   font-size: 16px;
-  font-family: Arial, sans-serif; }
+  font-family: 'Raleway', sans-serif; }
 
 .flex {
   display: flex; }
@@ -30,9 +31,9 @@ a {
   margin-left: 0.3rem;
   margin-right: 0.3rem; }
 
-/* NAVIGATION HEADER AND FOOOTER*/
-nav {
-  background-color: #131313;
+/* NAVIGATION HEADER*/
+#header-nav {
+  background-color: #8E1615;
   padding: 0.2rem; }
 
 nav li {
@@ -43,23 +44,210 @@ nav li a {
 
 /* MAIN CONTENT */
 #background {
-  background-image: url("resources/img/traffic.jpg");
-  min-height: 380px;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../img/traffic.jpg");
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#background h2 {
+  color: white;
+  padding-left: 1rem;
+  padding-top: 1rem; }
+
+#form {
+  background-color: #EAEAEA;
+  margin: 1rem;
+  padding: 2rem;
+  opacity: 0.9;
+  flex-direction: column;
+  justify-content: space-between; }
+
+form {
+  justify-content: space-between;
+  flex-direction: column; }
+
+#row {
+  justify-content: space-around; }
+
+#button-container {
+  justify-content: center; }
+
+.btn {
+  background-color: #349134;
+  color: #FFFFFF;
+  width: 30%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem; }
+
+#col1,
+#col2 {
+  width: 45%;
+  margin: 0.5rem;
+  padding: 1rem;
+  flex-direction: column; }
+
+label,
+input {
+  padding: 0.3rem; }
+
+#form h1 {
+  text-align: center; }
+
+#subtitle {
+  background-color: #CECECE;
+  padding: 1rem; }
+
+#subtitle h3,
+#subtitle p {
+  text-align: center; }
+
+#boxes {
+  margin-top: 10rem;
+  justify-content: space-between; }
+
+#box {
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 43%;
+  box-sizing: border-box;
+  border-top: solid 0.1rem #000000;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #888; }
+
+hr {
+  background-color: #8ED2D4;
+  color: #8ED2D4;
+  border: none;
+  height: 0.1rem; }
+
+h4 {
+  color: #6F86B4; }
+
+h4,
+h5 {
+  margin-bottom: 0; }
+
+#boxes ul {
+  list-style: none;
+  padding-inline-start: 0; }
+
+#boxes ul li:before {
+  content: '✓';
+  padding-right: 1rem;
+  color: #8ED2D4; }
+
+.little {
+  font-size: 0.75rem;
+  margin-block-start: 0;
+  margin-block-end: 0; }
 
 /* FOOTER */
 #footer {
   background-color: #131313;
   margin-top: 5rem; }
 
+#footer nav {
+  padding: 0.5rem; }
+
 #logo {
   justify-content: flex-end;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  padding-bottom: 1rem; }
 
 #footer p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
   color: #FFFFFF;
   font-size: 0.75rem; }
+
+/* MEDIA QUERIES */
+/* MOBILE OVERRIDES */
+@media only screen and (max-width: 600px) {
+  #hidden {
+    display: none; }
+
+  #container {
+    width: 100%; }
+
+  #footer,
+  #banner,
+  #header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+  #banner img {
+    padding-left: 2rem; }
+
+  #logo img {
+    padding-left: 4.3rem; }
+
+  #form h1 {
+    font-size: 1.5rem; }
+
+  #row {
+    align-items: flex-start; }
+
+  label {
+    font-size: 0.75rem; }
+
+  .btn {
+    font-size: 1rem; }
+
+  #subtitle h3,
+  #subtitle p {
+    font-size: 0.75rem; }
+
+  #boxes {
+    flex-wrap: wrap; }
+
+  #box {
+    width: 100%; }
+
+  #footer p {
+    padding-left: 2rem; } }
+/* TABLET OVERRIDES */
+@media only screen and (max-width: 1024px) {
+  #hidden {
+    display: none; }
+
+  #container {
+    width: 100%; }
+
+  #footer,
+  #banner,
+  #header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+  #logo img {
+    padding-left: 4.3rem; }
+
+  #footer p {
+    padding-left: 2rem; }
+
+  #form h1 {
+    font-size: 1.5rem; }
+
+  #banner img {
+    padding-left: 3rem; } }
+/* BIG SCREEN OVERRIDES */
+@media only screen and (min-width: 1024px) {
+  #container {
+    width: 80%; }
+
+  #form {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+  #boxes {
+    margin-top: 13rem; } }
 
 /*# sourceMappingURL=style.css.map */

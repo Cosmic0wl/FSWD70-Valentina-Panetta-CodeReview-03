@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,26 +24,33 @@
         </nav>
         <!-- CONTAINER -->
         <div id="container">
-        	<!-- MAIN CONTENT -->
+            <!-- MAIN CONTENT -->
             <div id="main">
                 <div id="background">
                     <h2>Car Insurance</h2>
-                    <div id="form">
-                        <form>
-                            <h1>Great Coverage begins with a custom quote</h1>
-                            <label for="name">Your name:</label>
-                            <input type="text" placeholder="Enter Your Name" name="name" required>
-                            <label for="age">Age:</label>
-                            <input type="age" placeholder="Enter Your Age" name="age" required>
-                            <label for="country">Your Country:</label>
-                            <select name="countries">
-                                <option value="austria">Austria</option>
-                                <option value="hungary">Hungary</option>
-                                <option value="greece">Greece</option>
-                            </select>
-                            <label for="horsepower">Horsepower of your car:</label>
-                            <input type="text" placeholder="Enter the horsepower" name="horsepower" required>
+                    <div id="form" class="flex">
+                        <h1>Great Coverage begins with a custom quote</h1>
+                        <form class="flex">
+                            <div id="row" class="flex">
+                                <div id="col1" class="flex"><label for="name">Your name:</label>
+                                    <input type="text" placeholder="Enter Your Name" name="name" required>
+                                    <label for="country">Your Country:</label>
+                                    <select name="countries">
+                                        <option value="austria">Austria</option>
+                                        <option value="hungary">Hungary</option>
+                                        <option value="greece">Greece</option>
+                                    </select>
+                                </div>
+                                <div id="col2" class="flex">
+                                    <label for="age">Age:</label>
+                                    <input type="age" placeholder="Enter Your Age" name="age" required>
+                                    <label for="horsepower">Horsepower of your car:</label>
+                                    <input type="text" placeholder="Enter the horsepower" name="horsepower" required>
+                                </div>
+                            </div>
+                            <div id="button-container" class="flex">
                             <button type="submit" class="btn">Calculate</button>
+                        </div>
                         </form>
                     </div>
                     <div id="subtitle">
@@ -57,7 +65,7 @@
             <div id="boxes" class="flex">
                 <div id="box">
                     <h4>What comes standard</h4>
-                    <p>The coverage you need</p>
+                    <p class="little">The coverage you need</p>
                     <ul>
                         <li>Body Injury Liability</li>
                         <li>Property Damage</li>
@@ -65,11 +73,11 @@
                     </ul>
                     <hr>
                     <h5>Benefits</h5>
-                    <p>12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+                    <p class="little">12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
                 </div>
                 <div id="box">
                     <h4>Add-on protection & coverage</h4>
-                    <p>For more peace of mind</p>
+                    <p class="little">For more peace of mind</p>
                     <ul>
                         <li>Better Car Replacement</li>
                         <li>Towing & Labor</li>
@@ -77,7 +85,7 @@
                     </ul>
                     <hr>
                     <h5>Earned Benefits</h5>
-                    <p>Accident Forgiveness | New Car Replacement&trade;</p>
+                    <p class="little">Accident Forgiveness | New Car Replacement&trade;</p>
                 </div>
             </div>
         </div>
@@ -95,8 +103,8 @@
             <p>Valentina Panetta - CodeFactory 2019</p>
         </div>
     </div>
-    
-<script type="text/javascript" src ="script.js"></script>
+    <!--
+<script type="text/javascript" src ="resources/js/script.js"></script> -->
 </body>
 
 </html>
