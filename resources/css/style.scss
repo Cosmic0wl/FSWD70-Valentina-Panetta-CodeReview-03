@@ -35,7 +35,7 @@ a {
 }
 
 #container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -132,6 +132,11 @@ input {
     text-align: center;
 }
 
+#result {
+    color: $button-color;
+    text-align: center;
+}
+
 #subtitle {
     background-color: $subtitle-color;
     padding: 1rem;
@@ -187,6 +192,52 @@ h5 {
     font-size: 0.75rem;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+/* MAIN CONTENT TEAM PAGE */
+
+.colored {
+    background-color: $form-color;
+}
+
+#team {
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+#title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $nav-color;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0.2rem 0.2rem $logo-color;
+    padding-top: 2rem;
+}
+
+.team-member {
+    width: 30%;
+    padding: 0.5rem;
+}
+
+.team-member img {
+    border-radius: 50%;
+    border: solid 0.3rem $logo-color;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.team-member p {
+    text-align: center;
+    color: $h4-color;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.team-member:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -278,6 +329,18 @@ h5 {
         padding-left: 2rem;
     }
 
+    #team {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 50%;
+        border-top: solid 0.3rem $logo-color;
+    }
+
+
 }
 
 /* TABLET OVERRIDES */
@@ -315,6 +378,17 @@ h5 {
 
     #banner img {
         padding-left: 3rem;
+    }
+
+    #team {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 50%;
+        border-top: solid 0.3rem $logo-color;
     }
 
 }

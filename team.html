@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div id="wrapper">
-		<!-- HEADER -->
-		<div id="banner" class="flex">
-			<img  src="resources/img/logo.png" alt="insurance logo">
-			<a href="https://codefactory.wien/en/home-en/" target="_blank"><img id="hidden" src="resources/img/banner.png" alt="banner logo"></a>
-		</div>
-		<!-- NAVIGATION -->
-		<nav id="header-nav">
+    <div id="wrapper">
+        <!-- HEADER -->
+        <div id="banner" class="flex">
+            <img src="resources/img/logo.png" alt="insurance logo">
+            <a href="https://codefactory.wien/en/home-en/" target="_blank"><img id="hidden" src="resources/img/banner.png" alt="banner logo"></a>
+        </div>
+        <!-- NAVIGATION -->
+        <nav id="header-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="team.html">Team</a></li>
             </ul>
         </nav>
-        <div id="container">
-            <div id="team">
-                <h1>Meet The Team</h1>
-                <div class="team-member"></div>
-                <div class="team-member"></div>
-                <div class="team-member"></div>
+        <div id="container" class="colored">
+            <h1 id="title">Meet The Team</h1>
+            <div id="team" class="flex"> 
+                <div class="team-member">
+                </div>
+                <div class="team-member">
+                </div>
+                <div class="team-member">
+                </div>
             </div>
         </div>
-         <!-- FOOTER -->
+        <!-- FOOTER -->
         <div id="footer">
             <nav id="footer-nav">
                 <ul>
@@ -40,13 +46,13 @@
             </div>
             <p>Valentina Panetta - CodeFactory 2019</p>
         </div>
-	</div>
-	<script type="text/javascript" src="resources/js/data.json"></script>
+    </div>
+    <script type="text/javascript" src="resources/js/data.json"></script>
     <script>
-        
-     for (i = 0; i < teamMembers.length; i++) {
-        document.getElementsByClassName("team-member")[i].innerHTML = teamMembers[i].name + " " + teamMembers[i].email;
+    for (i = 0; i < teamMembers.length; i++) {
+        document.getElementsByClassName("team-member")[i].innerHTML = "<img src=" + teamMembers[i].image + ">" + "<p>" + teamMembers[i].name + "</p>" + "<p>" + teamMembers[i].email + "</p>";
     }
     </script>
 </body>
+
 </html>
