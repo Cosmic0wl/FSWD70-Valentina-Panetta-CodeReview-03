@@ -9,6 +9,7 @@ $h4-color: #6F86B4;
 $verified-color: #8ED2D4;
 $button-color: #349134;
 $form-color: #EAEAEA;
+$p-color: #434343;
 $shadow: 0.1rem 0.1rem 0.1rem 0.1rem #888;
 $active-color: #5EA159;
 
@@ -70,13 +71,10 @@ nav li a {
 /* MAIN CONTENT */
 
 #background {
-    flex-direction: column;
-    justify-content: space-between;
     background-image: url("../img/traffic.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: $subtitle-color;
 }
 
 #background h2 {
@@ -85,13 +83,20 @@ nav li a {
     padding-top: 1rem;
 }
 
+#resizer {
+    flex-direction: column;
+    align-items: center;
+}
+
 #form {
     background-color: $form-color;
     margin: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     opacity: 0.9;
     flex-direction: column;
     justify-content: space-between;
+    width: 80%;
+    border: solid 0.2rem $subtitle-color;
 }
 
 form {
@@ -154,6 +159,7 @@ input {
 #subtitle h3,
 #subtitle p {
     text-align: center;
+    color: $p-color;
 }
 
 #boxes {
@@ -342,6 +348,10 @@ h5 {
 
     #footer p {
         padding-left: 2rem;
+    }
+
+    #form {
+        width: 85%;
     }
 
     #form h1 {
