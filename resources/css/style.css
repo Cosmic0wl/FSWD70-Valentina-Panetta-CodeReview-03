@@ -47,10 +47,10 @@ nav li a {
   flex-direction: column;
   justify-content: space-between;
   background-image: url("../img/traffic.jpg");
-  height: 30rem;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: #CECECE; }
 
 #background h2 {
   color: white;
@@ -81,7 +81,13 @@ form {
   width: 30%;
   padding: 0.5rem;
   border-radius: 1rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 1rem; }
+
+#btn:active {
+  background-color: #5EA159;
+  transform: translateY(0.3rem); }
 
 #col1,
 #col2 {
@@ -92,7 +98,7 @@ form {
 
 label,
 input {
-  padding: 0.3rem; }
+  padding: 0.5rem; }
 
 #form h1 {
   text-align: center; }
@@ -110,7 +116,7 @@ input {
   text-align: center; }
 
 #boxes {
-  margin-top: 10rem;
+  margin-top: 2rem;
   justify-content: space-between; }
 
 #box {
@@ -209,31 +215,9 @@ h5 {
 /* MEDIA QUERIES */
 /* MOBILE OVERRIDES */
 @media only screen and (max-width: 600px) {
-  #hidden {
-    display: none; }
-
-  #container {
-    width: 100%; }
-
-  #footer,
-  #banner,
-  #header-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-
-  #banner img {
-    padding-left: 2rem; }
-
-  #logo img {
-    padding-left: 4.3rem; }
-
-  #form h1 {
-    font-size: 1.5rem; }
-
   #row {
-    align-items: flex-start; }
+    flex-direction: column;
+    align-items: center; }
 
   label {
     font-size: 0.75rem; }
@@ -252,16 +236,7 @@ h5 {
     width: 100%; }
 
   #footer p {
-    padding-left: 2rem; }
-
-  #team {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-
-  .team-member {
-    width: 50%;
-    border-top: solid 0.3rem #FFF2F3; } }
+    padding-left: 2rem; } }
 /* TABLET OVERRIDES */
 @media only screen and (max-width: 1024px) {
   #hidden {
@@ -307,7 +282,14 @@ h5 {
     padding-left: 1rem;
     padding-right: 1rem; }
 
+  #form h1 {
+    font-weight: 700;
+    font-size: 3rem; }
+
   #boxes {
-    margin-top: 13rem; } }
+    margin-top: 4rem; }
+
+  #box {
+    width: 45%; } }
 
 /*# sourceMappingURL=style.css.map */

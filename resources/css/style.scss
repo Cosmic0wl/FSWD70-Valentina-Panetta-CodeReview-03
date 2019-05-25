@@ -10,6 +10,7 @@ $verified-color: #8ED2D4;
 $button-color: #349134;
 $form-color: #EAEAEA;
 $shadow: 0.1rem 0.1rem 0.1rem 0.1rem #888;
+$active-color: #5EA159;
 
 body {
     font-size: 16px;
@@ -72,10 +73,10 @@ nav li a {
     flex-direction: column;
     justify-content: space-between;
     background-image: url("../img/traffic.jpg");
-    height: 30rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: $subtitle-color;
 }
 
 #background h2 {
@@ -113,6 +114,13 @@ form {
     padding: 0.5rem;
     border-radius: 1rem;
     font-size: 1.5rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+#btn:active {
+    background-color: $active-color;
+    transform: translateY(0.3rem);
 }
 
 #col1,
@@ -125,11 +133,12 @@ form {
 
 label,
 input {
-    padding: 0.3rem;
+    padding: 0.5rem;
 }
 
 #form h1 {
     text-align: center;
+
 }
 
 #result {
@@ -148,7 +157,7 @@ input {
 }
 
 #boxes {
-    margin-top: 10rem;
+    margin-top: 2rem;
     justify-content: space-between;
 }
 
@@ -235,7 +244,7 @@ h5 {
     font-size: 1.2rem;
 }
 
-.team-member:hover{
+.team-member:hover {
     opacity: 0.5;
     cursor: pointer;
 }
@@ -268,40 +277,15 @@ h5 {
 
 /* MEDIA QUERIES */
 
+
+
 /* MOBILE OVERRIDES */
 
 @media only screen and (max-width: 600px) {
-    #hidden {
-        display: none;
-    }
-
-    #container {
-        width: 100%;
-    }
-
-    #footer,
-    #banner,
-    #header-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #banner img {
-        padding-left: 2rem;
-    }
-
-    #logo img {
-        padding-left: 4.3rem;
-    }
-
-    #form h1 {
-        font-size: 1.5rem;
-    }
 
     #row {
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
     }
 
     label {
@@ -329,18 +313,6 @@ h5 {
         padding-left: 2rem;
     }
 
-    #team {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .team-member {
-        width: 50%;
-        border-top: solid 0.3rem $logo-color;
-    }
-
-
 }
 
 /* TABLET OVERRIDES */
@@ -361,8 +333,8 @@ h5 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
 
+    }
 
     #logo img {
         padding-left: 4.3rem;
@@ -404,7 +376,16 @@ h5 {
         padding-right: 1rem;
     }
 
+    #form h1 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
     #boxes {
-        margin-top: 13rem;
+        margin-top: 4rem;
+    }
+
+    #box {
+        width: 45%;
     }
 }
